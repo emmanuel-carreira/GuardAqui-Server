@@ -7,7 +7,7 @@ from django.conf import settings
 #Client model
 class cliente(models.Model):
 
-    id = models.IntegerField(primary_key=True)
+    id = models.PositiveIntegerField(primary_key=True)
     nome = models.CharField(max_length=15)
     sobrenome = models.CharField(max_length=15)
     dt_nascimento = models.DateTimeField()
@@ -60,3 +60,23 @@ class clienteCobranca(models.Model):
 
     def __str__(self):
         return str(self.idCliente) + ' - ' + str(self.bandeiraCartao)
+
+#Signature type model
+class plano(models.Model):
+    idPlano = models.PositiveIntegerField(primary_key=True)
+    tipo = models.CharField(max_length=30)
+    valor = models.PositiveIntegerField()
+
+    def __str__(self):
+        return str(self.idPlano) + ' - ' + str(self.tipo)
+
+#Client signature type model
+class clientePlano(models.Model):
+    idCliente = models.ForeignKey('cliente', on_delete=models.CASCADE)
+    idPlano = models.ForeignKey('plano', on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name_plural = 'Planos dos clientes'
+
+    def __str__(self):
+        return str(self.idCliente) + ' - ' + str(self.idPlano)
