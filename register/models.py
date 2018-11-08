@@ -118,7 +118,6 @@ class hub(models.Model):
         return str(self.idHub)
 
 #Locker model
-
 class guardaVolume(models.Model):
 
     idHub = models.ForeignKey('hub', on_delete=models.CASCADE)
@@ -132,3 +131,26 @@ class guardaVolume(models.Model):
     def __str__(self):
         return str(self.idHub) + ' - ' + str(self.num)
 
+#Log model
+class log(models.Model):
+
+    idCliente = models.ForeignKey('cliente', on_delete=models.CASCADE)
+    datahora = models.DateTimeField(primary_key=True)
+    acao = models.CharField(max_length=20)
+
+    def __str__(self):
+        return str(self.idCliente) + ' - ' + str(self.datahora)
+
+#Locker log model
+class usa(models.Model):
+
+    idCliente = models.ForeignKey('cliente', on_delete=models.CASCADE)
+    idGuardaVolume = models.ForeignKey('guardaVolume', on_delete=models.CASCADE)
+    dataHoraInicio = models.DateTimeField()
+    dataHoraFim = models.DateTimeField()
+
+    class Meta:
+        verbose_name_plural = 'Logs dos lockers'
+
+    def __str__(self):
+        return str(self.idGuardaVolume) + ' - ' + str(self.idCliente)
