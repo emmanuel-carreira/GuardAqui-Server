@@ -32,8 +32,9 @@ class telefone_cliente(models.Model):
 class endereco(models.Model):
 
     idCliente = models.ForeignKey('cliente', on_delete=models.CASCADE, unique=True)
-    cep = models.CharField(max_length=10)
+    cep = models.CharField(max_length=10, primary_key=True)
     rua = models.CharField(max_length=50)
+    bairro = models.CharField(max_length=50, default='null')
     cidade = models.CharField(max_length=50)
     estado = models.CharField(max_length=50)
     pais = models.CharField(max_length=50)
@@ -63,6 +64,7 @@ class clienteCobranca(models.Model):
 
 #Signature type model
 class plano(models.Model):
+
     idPlano = models.PositiveIntegerField(primary_key=True)
     tipo = models.CharField(max_length=30)
     valor = models.PositiveIntegerField()
@@ -72,6 +74,7 @@ class plano(models.Model):
 
 #Client signature type model
 class clientePlano(models.Model):
+
     idCliente = models.ForeignKey('cliente', on_delete=models.CASCADE)
     idPlano = models.ForeignKey('plano', on_delete=models.CASCADE)
 
@@ -80,3 +83,23 @@ class clientePlano(models.Model):
 
     def __str__(self):
         return str(self.idCliente) + ' - ' + str(self.idPlano)
+
+#Charge andress model
+class enderecoCobranca(models.Model):
+
+    numeroCartao = models.ForeignKey('clienteCobranca', on_delete=models.CASCADE)
+    cep = models.CharField(max_length=10, primary_key=True)
+    rua = models.CharField(max_length=50, default='')
+    bairro = models.CharField(max_length=50, default='')
+    cidade = models.CharField(max_length=50, default='')
+    estado = models.CharField(max_length=50, default='')
+    pais = models.CharField(max_length=50, default='')
+    complemento = models.CharField(max_length=50, default='')
+    numero = models.PositiveIntegerField()
+
+
+    class Meta:
+        verbose_name_plural = 'Endereços Cobrança Clientes'
+
+    def __str__(self):
+        return str(self.cep) + ' - ' + str(self.numeroCartao)
