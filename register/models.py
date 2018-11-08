@@ -12,6 +12,8 @@ class cliente(models.Model):
     sobrenome = models.CharField(max_length=15)
     dt_nascimento = models.DateTimeField()
     nacionalidade = models.CharField(max_length=15)
+    email = models.EmailField()
+    senha = models.CharField(max_length=20)
 
     def __str__(self):
         return str(self.id) + ' - ' + self.nome
@@ -103,3 +105,5 @@ class enderecoCobranca(models.Model):
 
     def __str__(self):
         return str(self.cep) + ' - ' + str(self.numeroCartao)
+
+#Client email model
