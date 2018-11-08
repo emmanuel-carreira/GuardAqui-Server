@@ -106,4 +106,29 @@ class enderecoCobranca(models.Model):
     def __str__(self):
         return str(self.cep) + ' - ' + str(self.numeroCartao)
 
-#Client email model
+#Hub model
+class hub(models.Model):
+
+    idHub = models.PositiveIntegerField(primary_key=True)
+    quantGuardaVolumes = models.PositiveIntegerField()
+    coordw = models.CharField(max_length=12)
+    coords = models.CharField(max_length=12)
+
+    def __str__(self):
+        return str(self.idHub)
+
+#Locker model
+
+class guardaVolume(models.Model):
+
+    idHub = models.ForeignKey('hub', on_delete=models.CASCADE)
+    num = models.PositiveIntegerField(primary_key=True)
+    ocupacao = models.PositiveIntegerField()
+    status = models.CharField(max_length=20)
+
+    class Meta:
+        verbose_name_plural = 'Guarda Volumes'
+
+    def __str__(self):
+        return str(self.idHub) + ' - ' + str(self.num)
+

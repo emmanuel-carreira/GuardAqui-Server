@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf6974f7-53f3-4dcd-9e02-ad06eb2869d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/register/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/register/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,13 +43,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="131" />
-          <entry key="py" value="3161" />
+          <entry key="py" value="3668" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="131" />
-          <entry key="Python" value="3161" />
+          <entry key="Python" value="3668" />
         </counts>
       </usages-collector>
     </session>
@@ -65,13 +68,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/register/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+            <state relative-caret-position="463">
+              <caret line="132" column="54" selection-start-line="132" selection-start-column="54" selection-end-line="132" selection-end-column="54" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <marker date="1541635930283" expanded="true" signature="2092:2093" ph="..." />
-                <marker date="1541635930283" expanded="true" signature="2384:2385" ph="..." />
-                <marker date="1541635930283" expanded="true" signature="2740:2741" ph="..." />
+                <marker date="1541636998485" expanded="true" signature="2092:2093" ph="..." />
+                <marker date="1541636998485" expanded="true" signature="2384:2385" ph="..." />
+                <marker date="1541636998485" expanded="true" signature="2740:2741" ph="..." />
+                <marker date="1541636998485" expanded="true" signature="3469:3470" ph="..." />
+                <marker date="1541636998485" expanded="true" signature="3469:3475" ph="..." />
+                <marker date="1541636998485" expanded="true" signature="3778:3779" ph="..." />
+                <marker date="1541636998485" expanded="true" signature="3778:3784" ph="..." />
               </folding>
             </state>
           </provider>
@@ -80,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/register/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="165">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -116,7 +123,7 @@
     <option name="x" value="993" />
     <option name="y" value="27" />
     <option name="width" value="917" />
-    <option name="height" value="1053" />
+    <option name="height" value="948" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -178,7 +185,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="993" y="27" width="917" height="1053" extended-state="4" />
+    <frame x="993" y="27" width="917" height="948" extended-state="4" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25832376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -191,7 +198,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2156013" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.24327628" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -243,8 +250,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/register/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="165">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -253,13 +260,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/register/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        <state relative-caret-position="463">
+          <caret line="132" column="54" selection-start-line="132" selection-start-column="54" selection-end-line="132" selection-end-column="54" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <marker date="1541635930283" expanded="true" signature="2092:2093" ph="..." />
-            <marker date="1541635930283" expanded="true" signature="2384:2385" ph="..." />
-            <marker date="1541635930283" expanded="true" signature="2740:2741" ph="..." />
+            <marker date="1541636998485" expanded="true" signature="2092:2093" ph="..." />
+            <marker date="1541636998485" expanded="true" signature="2384:2385" ph="..." />
+            <marker date="1541636998485" expanded="true" signature="2740:2741" ph="..." />
+            <marker date="1541636998485" expanded="true" signature="3469:3470" ph="..." />
+            <marker date="1541636998485" expanded="true" signature="3469:3475" ph="..." />
+            <marker date="1541636998485" expanded="true" signature="3778:3779" ph="..." />
+            <marker date="1541636998485" expanded="true" signature="3778:3784" ph="..." />
           </folding>
         </state>
       </provider>
